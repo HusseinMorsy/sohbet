@@ -3,7 +3,7 @@ Feature: Dashboard
   A User
   Should be able to the the last messages and meetings
 
-  Scenario: User is not signed in
+  Scenario: User is not logged in
     Given I am not logged in
     When I go to the home page
     Then I should see "Dashboard"

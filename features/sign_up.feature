@@ -6,7 +6,7 @@ Feature: Sign up
     Background:
       Given I am not logged in
       And I am on the home page
-      And I go to the sign up page
+      And I go to the login page
 
     Scenario: User signs up with valid data
       And I fill in the following:
