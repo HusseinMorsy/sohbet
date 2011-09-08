@@ -37,3 +37,8 @@ end
 group :development do
   gem 'capistrano'
 end
+
+group :production do
+  # required for compile assets an production server
+  gem 'therubyracer'
+end
