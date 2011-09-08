@@ -37,7 +37,7 @@ role :db,  "#{domain}", :primary => true # This is where Rails migrations will r
 #   end
 # end
 #
-after "deploy:update_code", "deploy:symlink_database_yml"
+after "deploy:finalize_update", "deploy:symlink_database_yml"
 
 namespace :deploy do
   task :start do ; end
