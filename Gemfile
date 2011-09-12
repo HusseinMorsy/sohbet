@@ -17,6 +17,11 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'haml'
+gem 'web-app-theme', :git => "git://github.com/tscolari/web-app-theme.git", :branch => "v3.1.0"
+# following gems are required by web-app-theme
+gem 'hpricot'
+gem 'ruby_parser'
 
 # Use unicorn as the web server
 # gem 'unicorn'
