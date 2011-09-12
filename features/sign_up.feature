@@ -22,7 +22,7 @@ Feature: Sign up
         | Password              | please          |
         | Password confirmation | please          |
       And I press "Sign up"
-      Then I should see "Email is invalid"
+      Then I should see "is invalid"
 
     Scenario: User signs up without password
       And I fill in the following:
@@ -30,7 +30,7 @@ Feature: Sign up
         | Password              |                    |
         | Password confirmation | secret             |
       And I press "Sign up"
-      Then I should see "Password can't be blank"
+      Then I should see "can't be blank"
 
     Scenario: User signs up without password confirmation
       And I fill in the following:
@@ -38,7 +38,7 @@ Feature: Sign up
         | Password              | secret             |
         | Password confirmation |                    |
       And I press "Sign up"
-      Then I should see "Password doesn't match confirmation"
+      Then I should see "doesn't match confirmation"
 
     Scenario: User signs up with mismatched password and confirmation
       And I fill in the following:
@@ -46,4 +46,4 @@ Feature: Sign up
         | Password              | secret             |
         | Password confirmation | other              |
       And I press "Sign up"
-      Then I should see "Password doesn't match confirmation"
+      Then I should see "doesn't match confirmation"
