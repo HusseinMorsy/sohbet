@@ -9,15 +9,14 @@
     #container
       #header
         %h1
-          %a{:href => "/"} Sohbet
+          %a{:href => "/"} Sohbet app
         #user-navigation
           %ul.wat-cf
-            %li
-              %a{:href => "#"}= t("web-app-theme.profile", :default => "Profile")
-            %li
-              %a{:href => "#"}= t("web-app-theme.settings", :default => "Settings")
-            %li
-              %a.logout{:href => "/logout"}= t("web-app-theme.logout", :default => "Logout")
+            - if user_signed_in?
+              %li.logout= link_to "Logout", destroy_user_session_path, :method=> :delete
+            - else
+              %li.login= link_to "Login", new_session_path(:user)
+              %li.signup= link_to "Sign up", new_registration_path(:user)
         #main-navigation
           %ul.wat-cf
       #wrapper.wat-cf
