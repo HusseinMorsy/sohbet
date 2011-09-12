@@ -7,3 +7,7 @@
  */
 
 /* Write here your css for overriding the theme's rules */
+.flash .alert {
+  border: 1px solid #FBB;
+  background-color: #FDD;
+}
