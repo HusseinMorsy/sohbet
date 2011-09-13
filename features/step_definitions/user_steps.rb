@@ -57,3 +57,8 @@ Then /^I should be logged out$/ do
   And %{I should see "Login"}
   And %{I should not see "Logout"}
 end
+
+Then /^a User with "([^"]*)" with email "([^"]*)" should exists$/ do |name, email|
+  firstname , lastname = name.split
+  User.where(:email=>email, :firstname => firstname).should_not be_empty
+end

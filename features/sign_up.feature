@@ -10,11 +10,14 @@ Feature: Sign up
 
     Scenario: User signs up with valid data
       And I fill in the following:
+        | Firstname             | Steve           |
+        | Lastname              | Jobs            |
         | Email                 | user@sohbet.com |
         | Password              | please          |
         | Password confirmation | please          |
       And I press "Sign up"
       Then I should see "Welcome! You have signed up successfully." 
+      And a User with "Steve Jobs" with email "user@sohbet.com" should exists
       
     Scenario: User signs up with invalid email
       And I fill in the following:
