@@ -1,8 +1,11 @@
-%h2 New Message
-= simple_form_for(@message) do |f|
-  = f.error_notification
-  .inputs
-    = f.input :title, :required => true, :autofocus => true
-    = f.input :body, :requried => true
-  .actions
-    = f.button :submit, "Create message"
+.block
+  .content
+    %h2.title New Message
+    .inner
+      = simple_form_for(@message) do |f|
+        = f.error_notification
+        .inputs
+          = f.input :title, :required => true, :autofocus => true
+          = f.input :body, :requried => true
+        .actions
+          = f.button :submit, "Create message"
