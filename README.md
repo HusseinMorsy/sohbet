@@ -1,6 +1,7 @@
 # Sohbet
 
 Sohbet is a simple meeting and collaboration web application for software projects.
+The name "Sohbet" is turkish and means conversation.
 The development is still at the beginning. The web application should
 have at least the following features:
 
