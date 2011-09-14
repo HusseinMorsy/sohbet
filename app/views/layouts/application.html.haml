@@ -19,6 +19,13 @@
               %li.signup= link_to "Sign up", new_registration_path(:user)
         #main-navigation
           %ul.wat-cf
+            %li= link_to "Dashboard", root_path
+            %li= link_to "Messages", messages_path
+            %li= link_to "Meetings"
+            %li= link_to "Action items"
+            %li= link_to "Issues"
+            %li= link_to "Documents"
+            %li= link_to "..."
       #wrapper.wat-cf
         .flash
           - flash.each do |type, message|
