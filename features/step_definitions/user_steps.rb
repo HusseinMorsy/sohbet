@@ -44,6 +44,17 @@ When /^I sign in as "(.*)\/(.*)"$/ do |email, password|
   And %{I press "Sign in"}
 end
 
+When /^I am logged in as "(.*) (.*)"$/ do |firstname, lastname|
+  user = Factory(:user, :firstname => firstname, :lastname => lastname,
+                 :password => "topsecret", :password_confirmation => "topsecret")
+  Given %{I am not logged in}
+  When %{I go to the sign in page}
+  And %{I fill in "Email" with "#{user.email}"}
+  And %{I fill in "Password" with "topsecret"}
+  And %{I press "Sign in"}
+  Then %{I should see "Signed in successfully."}
+end
+
 Then /^I should be logged in$/ do
   Then %{I should see "Signed in successfully."}
 end

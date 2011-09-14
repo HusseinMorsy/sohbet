@@ -38,6 +38,7 @@ GEM
       activesupport (= 3.1.0)
     activesupport (3.1.0)
       multi_json (~> 1.0)
+    addressable (2.2.6)
     arel (2.2.1)
     bcrypt-ruby (3.0.0)
     builder (3.0.0)
@@ -99,6 +100,8 @@ GEM
     json (1.5.4)
     json_pure (1.5.4)
       spruz (~> 0.2.8)
+    launchy (2.0.5)
+      addressable (~> 2.2.6)
     libv8 (3.3.10.2)
     mail (2.3.0)
       i18n (>= 0.4.0)
@@ -204,6 +207,7 @@ DEPENDENCIES
   factory_girl_rails
   haml
   jquery-rails
+  launchy
   pg
   rails (= 3.1.0)
   rspec-rails

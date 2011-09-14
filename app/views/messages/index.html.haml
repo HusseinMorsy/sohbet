@@ -1,3 +1,5 @@
+= link_to "New message", new_message_path
+
 - for message in @messages
   %h2= message.title
   %p.author from #{message.author}
