@@ -62,3 +62,8 @@ Then /^a User with "([^"]*)" with email "([^"]*)" should exists$/ do |name, emai
   firstname , lastname = name.split
   User.where(:email=>email, :firstname => firstname).should_not be_empty
 end
+
+Given /^there is a User "([^"]*)"$/ do |name|
+  firstname, lastname = name.split
+  Factory(:user, :firstname => firstname, :lastname => lastname)
+end
