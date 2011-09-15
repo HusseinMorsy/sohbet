@@ -9,3 +9,5 @@ env:
 before_script:
   - "psql -c 'create database sohbet_test;' -U postgres >/dev/null"
   - "mysql -e 'create database sohbet_test;' >/dev/null"
+
+script: "RAILS_ENV=test bundle exec rake db:schema:load && bundle exec cucumber"
