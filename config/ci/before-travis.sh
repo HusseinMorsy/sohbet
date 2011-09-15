@@ -3,10 +3,7 @@ sh -e /etc/init.d/xvfb start
 
 # Create a database.yml for the right database
 echo "Setting up database.yml for $DB"
-cp config/database.yml.example config/database.yml
-if [ "$DB" = "postgres" ]; then
-  sed -i 's/*mysql/*postgres/' config/database.yml
-fi
+cp config/database.yml.$DB config/database.yml
 
 # Set up database
 echo "Creating databases for $DB and loading schema"
