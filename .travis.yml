@@ -1,13 +1,14 @@
 rvm:
   - ree
   - 1.9.2
-env:
-  - DB=sqlite3
-  - DB=postgresql
-  - DB=mysql
 
-before_script:
-  - "psql -c 'create database sohbet_test;' -U postgres >/dev/null"
-  - "mysql -e 'create database sohbet_test;' >/dev/null"
+# env:
+#   - DB=sqlite3
+#   - DB=postgresql
+#   - DB=mysql
 
-script: "RAILS_ENV=test bundle exec rake db:schema:load && bundle exec cucumber"
+# before_script:
+#   - "psql -c 'create database sohbet_test;' -U postgres >/dev/null"
+#   - "mysql -e 'create database sohbet_test;' >/dev/null"
+
+script: "bundle exec rake db:migrate && bundle exec rake cucumber"
