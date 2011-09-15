@@ -26,6 +26,12 @@ have at least the following features:
     cp config/database.yml.example config/database.yml
     rake
 
+
+After each commit the tests are run by travis ci, a continious
+integration service for open source projects.
+
+Actual Test Result with travis ci: [![Build Status](https://secure.travis-ci.org/HusseinMorsy/sohbet.png)](http://travis-ci.org/HusseinMorsy/sohbet)
+
 ## Copyright
 
 Copyright (c) 2011 Hussein Morsy and Contributors
