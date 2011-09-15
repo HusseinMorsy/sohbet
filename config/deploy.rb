@@ -48,6 +48,6 @@ namespace :deploy do
 
   desc "create symlink for fileuploads"
   task :symlink_database_yml, :roles => :web do
-    run "ln -s #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+    run "ln -sf #{shared_path}/config/database.yml #{release_path}/config/database.yml"
   end
 end

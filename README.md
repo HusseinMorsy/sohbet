@@ -1,4 +1,5 @@
-# Sohbet
+# Sohbet [![Build Status](https://secure.travis-ci.org/HusseinMorsy/sohbet.png)](http://travis-ci.org/HusseinMorsy/sohbet)
+
 
 Sohbet is a simple meeting and collaboration web application for software projects.
 The name "Sohbet" is turkish and means conversation.
@@ -16,7 +17,7 @@ have at least the following features:
 
 * Application Framework :[Ruby on Rails
   3.1]("http://www.rubyonrails.org")
-* Database: [PosgreSQL]("http://www.postgresql.org/")
+* Databases: [PosgreSQL]("http://www.postgresql.org/"), [SQLite3]("http://www.sqlite.org/") or [MySQL]("http://www.mysql.com")
 * Testing: [Cucumber]("http://cukes.info/")
 
 ## Running tests

@@ -1,6 +1,11 @@
 rvm:
   - ree
   - 1.9.2
+env:
+  - DB=sqlite3
+  - DB=postgresql
+  - DB=mysql
 
 before_script:
   - "psql -c 'create database sohbet_test;' -U postgres >/dev/null"
+  - "mysql -e 'create database sohbet_test;' >/dev/null"

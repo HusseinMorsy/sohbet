@@ -49,10 +49,7 @@ end
 #   end
 #
 if ENV['TRAVIS']
-  db_cfg =  {"postgresql"=>{"adapter"=>"postgresql", "encoding"=>"unicode", "database"=>"sohbet_test",  "username"=>"postgres"}}
-  db_cfg =  {"postgresql"=>{"adapter"=>"postgresql", "encoding"=>"unicode", "database"=>"sohbet_test",  "username"=>"hussein"}}
-  ActiveRecord::Base.configurations = db_cfg
-  db_name = ENV['DB'] || 'postgresql'
+  db_name = ENV['DB'] || 'sqlite'
   ActiveRecord::Base.establish_connection(db_name)
   ActiveRecord::Base.default_timezone = :utc
 end
