@@ -48,8 +48,3 @@ end
 #     DatabaseCleaner.strategy = :transaction
 #   end
 #
-if ENV['TRAVIS']
-  db_name = ENV['DB'] || 'sqlite'
-  ActiveRecord::Base.establish_connection(db_name)
-  ActiveRecord::Base.default_timezone = :utc
-end
