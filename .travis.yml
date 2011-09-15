@@ -1,0 +1,6 @@
+rvm:
+  - ree
+  - 1.9.2
+
+before_script:
+  - "psql -c 'create database sohbet_test;' -U postgres >/dev/null"
