@@ -12,4 +12,4 @@ env:
 
 before_script: "./config/ci/before-travis.sh"
 
-script: "export DISPLAY=:99.0 && bundle exec rake cucumber"
+script: "DISPLAY=:99.0 bundle exec rake cucumber"
