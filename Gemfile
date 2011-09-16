@@ -19,7 +19,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'haml'
+gem 'haml-rails'
 gem 'web-app-theme', :git => "git://github.com/tscolari/web-app-theme.git", :branch => "v3.1.0"
 gem 'simple_form'
 # Use unicorn as the web server
