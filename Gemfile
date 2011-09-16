@@ -31,7 +31,7 @@ gem 'simple_form'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-group :test do
+group :test, :development do
   gem 'cucumber-rails'
   gem 'rspec-rails'
   gem 'database_cleaner'

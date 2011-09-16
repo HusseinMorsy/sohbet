@@ -52,9 +52,15 @@ module Sohbet
     config.assets.version = '1.0'
 
     # Generator settings
-    # config.generators do |g|
+    config.generators do |g|
     #   g.template_engine :haml
-    # end
+      g.test_framework :rspec
+      g.fixture_replacement :factory_girl, :dir => "spec/factories"
+      g.view_specs false
+    #   g.helper_specs false
+    end
+
+    # Devise settings
     config.to_prepare do
       Devise::SessionsController.layout "sign"
       Devise::RegistrationsController.layout "sign"
