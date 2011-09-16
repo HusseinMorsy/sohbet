@@ -27,6 +27,7 @@ Feature: Login
       When I go to the login page
       And I sign in as "user@sohbet.com/please"
       Then I should see "Signed in successfully."
+      And I should see "You are logged in as user@sohbet.com" within "#user-navigation"
       And I should be logged in
       When I return next time
       Then I should be already logged in

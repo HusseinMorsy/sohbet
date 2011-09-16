@@ -13,6 +13,7 @@
         #user-navigation
           %ul.wat-cf
             - if user_signed_in?
+              %li.logged_in You are logged in as #{current_user.email}
               %li.logout= link_to "Logout", destroy_user_session_path, :method=> :delete
             - else
               %li.login= link_to "Login", new_session_path(:user)

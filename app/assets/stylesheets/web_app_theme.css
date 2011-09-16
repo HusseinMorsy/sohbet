@@ -1,4 +1,4 @@
-/* 
+/*
  * This css will include all web-app-theme css you need
  *
  *= require web-app-theme/base
@@ -10,4 +10,7 @@
 .flash .alert {
   border: 1px solid #FBB;
   background-color: #FDD;
+}
+.logged_in{
+  color:#fff;
 }
