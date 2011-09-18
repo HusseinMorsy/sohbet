@@ -34,6 +34,7 @@ gem 'simple_form'
 group :test, :development do
   gem 'cucumber-rails'
   gem 'rspec-rails'
+  gem 'shoulda-matchers'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'launchy'

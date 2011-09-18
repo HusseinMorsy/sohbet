@@ -187,6 +187,7 @@ GEM
       ffi (>= 1.0.7)
       json_pure
       rubyzip
+    shoulda-matchers (1.0.0.beta3)
     simple_form (1.5.0)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
@@ -236,6 +237,7 @@ DEPENDENCIES
   rb-fsevent
   rspec-rails
   sass-rails (~> 3.1.0)
+  shoulda-matchers
   simple_form
   sqlite3
   therubyracer
