@@ -33,6 +33,8 @@ integration service for open source projects.
 
 Actual Test Result with travis ci: [![Build Status](https://secure.travis-ci.org/HusseinMorsy/sohbet.png)](http://travis-ci.org/HusseinMorsy/sohbet)
 
+For development it is recommended to use [Guard](https://github.com/guard/guard). It is allready configured for mac.
+
 ## Copyright
 
 Copyright (c) 2011 Hussein Morsy and Contributors
