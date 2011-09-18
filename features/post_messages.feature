@@ -12,5 +12,4 @@ Feature: Post messages
     And  I press "Create message"
     Then I should see "Message successfully created"
     And I should see "Here are the details"
-    And I should see "Here are the details"
     And I should see "from Luke Skywalker"
