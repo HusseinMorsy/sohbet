@@ -52,9 +52,9 @@ describe CommentsController do
       assigns(:comment).should be_persisted
     end
 
-    it "redirects to the created comment" do
+    it "redirects to the  message detail of the comment" do
       post :create, :message_id => message.id, :comment => valid_attributes
-      response.should redirect_to(messages_url)
+      response.should redirect_to(message)
     end
 
     it "sets flash[:info]" do

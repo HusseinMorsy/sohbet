@@ -11,7 +11,7 @@ class CommentsController < ApplicationController
     @comment.message = current_message
     @comment.user = current_user
     @comment.save
-    redirect_to messages_url, :notice => "Thank you for the comment"
+    redirect_to current_message, :notice => "Thank you for the comment"
   end
 
   private

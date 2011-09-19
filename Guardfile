@@ -22,8 +22,9 @@ end
 
 guard 'cucumber' do
   watch(%r{^features/.+\.feature$})
-  watch(%r{^features/support/.+$})          { 'features' }
+  watch(%r{^features/support/.+$})                    { 'features' }
   watch(%r{^features/step_definitions/(.+)_steps\.rb$}) { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'features' }
-  # run all features when user_steps.rb are changed
-  watch(%r{^features/support/user_steps.rb$})          { 'features' }
+  watch(%r{^features/support/user_steps.rb$})         { 'features' }
+  watch(%r{^app/views/messages/(index|show)})         { 'features/see_messages.feature' }
+  watch('app/controllers/messages_controller.rb')     { 'features/see_messages.feature' }
 end

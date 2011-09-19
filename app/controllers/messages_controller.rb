@@ -5,6 +5,10 @@ class MessagesController < ApplicationController
     @messages = Message.all
   end
 
+  def show
+    @message = Message.find(params[:id])
+  end
+
   def new
     @message = Message.new
   end
@@ -12,6 +16,6 @@ class MessagesController < ApplicationController
   def create
     @message = current_user.messages.build(params[:message])
     @message.save!
-    redirect_to messages_url, :notice => "Message successfully created"
+    redirect_to @message, :notice => "Message successfully created"
   end
 end

@@ -8,8 +8,8 @@ Feature: Comment messages
     And there is a User "Tim Cook"
     And "Tim Cook" has posted the message "lets talk" with title "Important message"
     When I visit the messages page
-    Then I should see "Important message"
-    When I follow "Add a comment"
+    And I follow "Important message"
+    And I follow "Add a comment"
     And I fill in "Comment" with "I have the same opinion"
     And I press "Comment"
     Then I should see "Thank you for the comment"
