@@ -7,3 +7,8 @@
       .inner
         %p.author from #{message.author}
         %p= message.body
+        - for comment in message.comments do
+          %hr
+          %h3 Comment from #{comment.user.name}
+          %p= comment.body
+        %p= link_to "Add a comment", new_message_comment_path(message)

@@ -2,7 +2,9 @@ Sohbet::Application.routes.draw do
   get "dashboard/index"
 
   devise_for :users
-  resources :messages
+  resources :messages do
+    resources :comments
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

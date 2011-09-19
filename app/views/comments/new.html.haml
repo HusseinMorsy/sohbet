@@ -1,0 +1,9 @@
+%h2 New Comment
+.content
+  = simple_form_for([@comment.message, @comment]) do |f|
+    = f.error_notification
+    .inputs
+      = f.input :body, :label => "Comment"
+    .actions
+      = f.button :submit, "Comment"
+

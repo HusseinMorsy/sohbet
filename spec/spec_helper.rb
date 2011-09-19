@@ -24,4 +24,9 @@ RSpec.configure do |config|
   # examples within a transaction, remove the following line or assign false
   # instead of true.
   config.use_transactional_fixtures = true
+
+  # User Devise TestHelper, so you can use:
+  # sign_in @user
+  # sign_out @user  or sign_out :user
+  config.include Devise::TestHelpers, :type => :controller
 end
