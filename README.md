@@ -36,6 +36,21 @@ Actual Test Result with travis ci: [![Build Status](https://secure.travis-ci.org
 
 For development it is recommended to use [Guard](https://github.com/guard/guard). It is allready configured for mac.
 
+## Supported Ruby versions
+
+This library aims to support and is tested against the following Ruby implementations:
+
+* Ruby 1.8.7
+* Ruby 1.9.2
+* Ruby 1.9.3
+* Ruby Ruby Enterprise Edition (REE)
+
+## Supoorted Relational Database Systems:
+
+* [Mysql](http://www.mysql.com/)
+* [PostreSQL](http://www.postgresql.org/)
+* [SQLite3](http://www.sqlite.org/)
+
 ## Copyright
 
 Copyright (c) 2011 Hussein Morsy and Contributors
