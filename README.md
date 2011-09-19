@@ -34,7 +34,9 @@ integration service for open source projects.
 
 Actual Test Result with travis ci: [![Build Status](https://secure.travis-ci.org/HusseinMorsy/sohbet.png)](http://travis-ci.org/HusseinMorsy/sohbet)
 
-For development it is recommended to use [Guard](https://github.com/guard/guard). It is allready configured for mac.
+For development it is recommended to use [Guard](https://github.com/guard/guard). On a mac install the gems rb-fsevent and growl_notify by hand with
+
+    gem install rb-fsevent growl_notify
 
 ## Supported Ruby versions
 

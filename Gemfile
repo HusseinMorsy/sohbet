@@ -45,8 +45,6 @@ group :development do
   gem 'guard'
   gem 'guard-rspec'
   gem 'guard-cucumber'
-  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
-  gem 'growl_notify', :require => false if RUBY_PLATFORM =~ /darwin/i
 end
 
 group :production do
