@@ -1,0 +1,8 @@
+.block
+  %h2 Meeting
+  .content
+    %h2.title= @meeting.title
+    %h2.title= "#{@meeting.date.strftime("%d. %B %Y")} um #{@meeting.date.strftime("%H:%M")}"
+    .inner
+      %p= @meeting.body
+      %p.author from #{@meeting.user.name}

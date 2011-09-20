@@ -1,0 +1,9 @@
+.block
+  = link_to "New Meeting", new_meeting_path
+  %h2 Meetings
+  - for meeting in @meetings
+    .content
+      %h2.title= link_to meeting.title, meeting
+      %h2.title= "#{meeting.date.strftime("%d. %B %Y")} um #{meeting.date.strftime("%H:%M")}"
+      .inner
+        %p.author from #{meeting.user.name}

@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
   attr_accessible :email,:firstname, :lastname, :password, :password_confirmation, :remember_me
 
   has_many :messages
+  has_many :meetings
 
   def self.find_by_name(name)
     firstname, lastname = name.split

@@ -1,0 +1,12 @@
+.block
+  .content
+    %h2.title New Meeting
+    .inner
+      = simple_form_for(@meeting) do |f|
+        = f.error_notification
+        .inputs
+          = f.input :title, :required => true, :autofocus => true
+          = f.input :body, :requried => true
+          = f.input :date, :label => :date, :requried => true
+        .actions
+          = f.button :submit, "Create Meeting"
