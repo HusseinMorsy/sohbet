@@ -37,15 +37,12 @@ parameters, because bunlder saved the settings in .bundler/config
 
     rake
 
-
 After each commit the tests are run by travis ci, a continious
 integration service for open source projects.
 
 Actual Test Result with travis ci: [![Build Status](https://secure.travis-ci.org/HusseinMorsy/sohbet.png)](http://travis-ci.org/HusseinMorsy/sohbet)
 
-For development it is recommended to use [Guard](https://github.com/guard/guard). On a mac install the gems rb-fsevent and growl_notify by hand with
-
-    gem install rb-fsevent growl_notify
+For development it is recommended to use [Guard](https://github.com/guard/guard).
 
 ## Supported Ruby versions
 
