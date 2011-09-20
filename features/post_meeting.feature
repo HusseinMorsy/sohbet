@@ -1,4 +1,3 @@
-@wip
 Feature: Post meeting
   In order to hold a meeting with all persons who are involved in a project
   A User
