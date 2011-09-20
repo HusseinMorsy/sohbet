@@ -12,6 +12,12 @@ env:
   - DB=postgresql
   - DB=mysql
 
+notifications:
+  recipients:
+    - developer@sohbetapp.com
+
+bundler_args:  --without test development linux_development mac_development
+
 before_script: "./config/ci/before-travis.sh"
 
 script: "DISPLAY=:99.0 bundle exec rake cucumber spec"
