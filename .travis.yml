@@ -8,7 +8,7 @@ rvm:
   - ree
 
 env:
-  - DB=sqlite3
+  - DB=sqlite
   - DB=postgresql
   - DB=mysql
 
