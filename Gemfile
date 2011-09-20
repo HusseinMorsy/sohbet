@@ -47,6 +47,15 @@ group :development do
   gem 'guard-cucumber'
 end
 
+group :mac_development do
+  gem 'growl_notify'
+  gem 'rb-fsevent'
+end
+
+group :linux_development do
+  gem 'rb-inotify'
+end
+
 group :production do
   # required for compile assets an production server
   gem 'therubyracer'

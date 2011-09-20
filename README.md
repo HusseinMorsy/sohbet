@@ -21,11 +21,20 @@ have at least the following features:
 * Testing: Outside-in-testing with  [Cucumber]("http://cukes.info/") for
   the integration tests and [rspec](https://www.relishapp.com/rspec) for the unit-test
 
+## Install
+
+    cp config/database.yml.example config/database.yml
+    # on a mac
+    bundle install --without production linux_development 
+    # or on a linux system
+    bundle install --without production mac_development 
+    
+
+Next time you run bundle install it is not required to add the --without
+parameters, because bunlder saved the settings in .bundler/config
+
 ## Running tests
 
-    gem install bundler
-    bundle install
-    cp config/database.yml.example config/database.yml
     rake
 
 
