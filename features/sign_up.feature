@@ -6,10 +6,10 @@ Feature: Sign up
     Background:
       Given I am not logged in
       And I am on the home page
-      And I go to the login page
+      And I go to the sign up page
 
     Scenario: User signs up with valid data
-      And I fill in the following:
+      When I fill in the following:
         | Firstname             | Steve           |
         | Lastname              | Jobs            |
         | Email                 | user@sohbet.com |
